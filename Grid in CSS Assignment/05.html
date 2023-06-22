@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           display: grid;
+           grid-template-areas: 
+           'box-1 box-2 box-3'
+           'box-4 box-4 box-4';
+           height: 100vh;
+        }
+        .left{
+            grid-area: box-1;
+            margin: 5px 25px 25px 25px;
+            border: 1px solid black;
+            border-radius: 20px;
+            
+            
+        }
+        .centre{
+            grid-area: box-2;
+            margin: 5px 25px 25px 25px;
+            border: 1px solid black;
+            border-radius: 20px;
+            
+        }
+        .right{
+            grid-area: box-3;
+            margin: 5px 25px 25px 25px;
+            border: 1px solid black;
+            border-radius: 20px;
+            
+        }
+        .footer{
+            grid-area: box-4;
+            background-color: rgb(12, 171, 23);
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .footer-pic{
+            
+        }
+        .box{
+            display: flex;
+            
+        }
+        img{
+            width: 450px;
+            height: 200px;
+            border-top-left-radius: 15%;
+            border-top-right-radius: 25%;
+            
+        }
+        .b1{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        li{
+            list-style: none;
+            margin-left: 0;
+            padding: 10px;
+        }
+        ul{
+            margin-left: -33px;
+        }
+        .logo{
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box left">
+            <img src="pics/chole chawal.jpg" alt="pic1">
+        </div>
+        <div class="box centre"><img src="pics/dinig.jpeg" alt="pic2"></div>
+        <div class="box right"><img src="pics/night club.webp" alt="pic3"></div>
+        <div class="box footer">
+            <div class="footer-pic"><img src="pics/healthy food logo.jpeg" alt="logo" class="logo"></div>
+            <div class="b1"><h4>Navigation Link</h4>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contect</li>
+                <li>List</li>
+            </ul></div>
+            <div class="b2">
+                <h4>Learn More</h4>
+                <ul>
+                    <li>Privacy</li>
+                    <li>Security</li>
+                    <li>Terms</li>
+                    <li>Side Map</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
